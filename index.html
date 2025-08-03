@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="icon" type="image/png" href="/static/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="/static/img/logo.png" alt="Fake Store Logo" class="logo" />
+        <h1>Fake Store</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to the Fake Store</h2>
+        <p>Your testing ground for DAST scanning and vulnerability research.</p>
+      </section>
+
+      <section class="products">
+        <h3>Featured Products</h3>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="/static/img/product1.png" alt="Product 1" />
+            <h4>Insecure T-Shirt</h4>
+            <p class="price">₹499</p>
+            <button onclick="alert('Add to Cart vulnerability exploited!')">
+              Add to Cart
+            </button>
+          </div>
+
+          <div class="product-card">
+            <img src="/static/img/product2.png" alt="Product 2" />
+            <h4>Broken Auth Mug</h4>
+            <p class="price">₹299</p>
+            <button onclick="alert('Clickjacking vulnerability exposed!')">
+              Buy Now
+            </button>
+          </div>
+
+          <div class="product-card">
+            <img src="/static/img/product3.png" alt="Product 3" />
+            <h4>XSS Sneakers</h4>
+            <p class="price">₹999</p>
+            <button onclick="alert('XSS Detected!')">Order</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Fake Store. Built for security testing purposes only.</p>
+    </footer>
+  </body>
+</html>

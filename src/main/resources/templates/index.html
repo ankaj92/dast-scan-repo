@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fake Store</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+  </head>
+  <body>
+    <header>
+      <h1>🛒 Welcome to Fake Store</h1>
+    </header>
+
+    <section class="search-section">
+      <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search products..." />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="products">
+      <div class="product-card">
+        <img th:src="@{/img/shoe1.jpg}" alt="Shoe" />
+        <h2>Stylish Shoes</h2>
+        <p>Comfortable & trendy sneakers</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img th:src="@{/img/bag1.jpg}" alt="Bag" />
+        <h2>Leather Bag</h2>
+        <p>Premium leather handbag</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img th:src="@{/img/headphone1.jpg}" alt="Headphones" />
+        <h2>Wireless Headphones</h2>
+        <p>High-quality sound and noise cancellation</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Fake Store. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

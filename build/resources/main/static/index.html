@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fake Store</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #111;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .products {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+      }
+      .product {
+        text-align: center;
+      }
+      .product img {
+        width: 150px;
+        height: 150px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background: #f0f0f0;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🛒 Welcome to Fake Store</h1>
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search products..." />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <div class="products">
+      <div class="product">
+        <img
+          src="/assignment8/src/main/resources/static/img/shoe1.jpg"
+          alt="Shoe"
+        />
+        <h2>Stylish Shoes</h2>
+        <p>Comfortable & trendy sneakers</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="/assignment8/src/main/resources/static/img/bag1.jpg"
+          alt="Bag"
+        />
+        <h2>Leather Bag</h2>
+        <p>Premium leather handbag</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img
+          src="/assignment8/src/main/resources/static/img/headphone1.jpg"
+          alt="Headphones"
+        />
+        <h2>Wireless Headphones</h2>
+        <p>High-quality sound and noise cancellation</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2025 Fake Store. All rights reserved.</p>
+    </div>
+  </body>
+</html>
